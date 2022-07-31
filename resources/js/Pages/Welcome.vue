@@ -18,10 +18,10 @@ defineProps({
 
     <div class="sticky">
 
-        <nav class="bg-white border-gray-200 dark:bg-gray-900 ">
+        <nav class="bg-gray-200 border-gray-200 dark:bg-gray-900 ">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl px-4 md:px-6 py-2.5">
                 <a href="#" class="flex items-center">
-                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="h-6 mr-3 sm:h-9" alt="Flowbite Logo">
                     <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Writers</span>
                 </a>
                 <div v-if="canLogin" class="flex items-center">
@@ -34,12 +34,12 @@ defineProps({
                             class="mr-6 text-sm font-medium text-gray-500 dark:text-white hover:underline">(555)
                             412-1234</a>
                         <Link :href="route('login')"
-                            class="mr-6  text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                            class="mr-6 text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">
                         Login
                         </Link>
 
                         <Link v-if="canRegister" :href="route('register')"
-                            class="mr-6  text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">
+                            class="mr-6 text-sm font-medium text-blue-600 dark:text-blue-500 hover:underline">
                         Register
                         </Link>
                     </template>
@@ -59,7 +59,7 @@ defineProps({
                     </svg>
                 </button>
 
-                <!-- <div v-if="canLogin" class="hidden   px-6 py-4 sm:block">
+                <!-- <div v-if="canLogin" class="hidden px-6 py-4 sm:block">
                 <Link v-if="$page.props.user" :href="route('dashboard')" class="text-sm text-gray-700 underline">
                 Dashboard
                 </Link>
@@ -79,7 +79,7 @@ defineProps({
             </div>
         </nav>
         <nav class="bg-gray-50 dark:bg-gray-700">
-            <div class="py-3 px-4 mx-auto max-w-screen-xl md:px-6">
+            <div class="max-w-screen-xl px-4 py-3 mx-auto md:px-6">
                 <div class="flex items-center">
                     <ul class="flex flex-row mt-0 mr-6 space-x-8 text-sm font-medium">
                         <li>
@@ -102,14 +102,14 @@ defineProps({
 
     </div>
     <div
-        class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
+        class="relative flex justify-center min-h-screen bg-gray-100 items-top dark:bg-gray-900 sm:items-center sm:pt-0">
 
 
 
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class=" sm:flex">
                 <div class="my-3">
-                    <h2 class=" text-4xl text-gray-800 dark:text-yellow-300 text-center">
+                    <h2 class="text-4xl text-center text-gray-800 dark:text-yellow-300">
                         Searching for a freelance
                         position
                         with a
@@ -121,7 +121,7 @@ defineProps({
                     <button type="button"
                         class="mx-6 my-6 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
                         Choose plan
-                        <svg aria-hidden="true" class="ml-2 -mr-1 w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        <svg aria-hidden="true" class="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20"
                             xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
                                 d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
@@ -129,7 +129,7 @@ defineProps({
                         </svg>
                     </button>
                     <br>
-                    <span class="mt-8 text-gray-900 dark:text-gray-50 flex">
+                    <span class="flex mt-8 text-gray-900 dark:text-gray-50">
                         <svg class="w-16 h-16 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -143,21 +143,21 @@ defineProps({
                 <img class=" sm:w-8/12" src="images\app\R.webp" alt="">
             </div>
             <!-- <hr class="my-3">
-            <h1 class="text-4xl text-gray-800 dark:text-yellow-300 text-center hover:underline mt-10">
+            <h1 class="mt-10 text-4xl text-center text-gray-800 dark:text-yellow-300 hover:underline">
                 How it works
             </h1> -->
             <hr class="my-3">
 
             <div>
                 <h2
-                    class="w-auto my-4 text-4xl font-bold tracking-tight text-center hover:underline text-gray-800 dark:text-yellow-300 underline-offset-auto ">
+                    class="w-auto my-4 text-4xl font-bold tracking-tight text-center text-gray-800 hover:underline dark:text-yellow-300 underline-offset-auto ">
                     How it works
                 </h2>
             </div>
             <div class="grid gap-6 mx-auto sm:grid-cols-3 ">
 
                 <div class="relative m-2 mb-10 bg-gray-800 rounded-lg shadow-lg each dark:border-gray-600">
-                    <svg class="w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700 mx-auto" fill="none"
+                    <svg class="mx-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z">
@@ -172,8 +172,8 @@ defineProps({
                     </div>
                 </div>
                 <!-- each -->
-                <div class="relative m-2 mb-10  bg-gray-800 rounded-lg  border-gray-800 shadow-lg each">
-                    <svg class="m-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700 mx-auto" fill="none"
+                <div class="relative m-2 mb-10 bg-gray-800 border-gray-800 rounded-lg shadow-lg each">
+                    <svg class="m-auto mx-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z">
@@ -190,8 +190,8 @@ defineProps({
                     </div>
                 </div>
                 <!-- each -->
-                <div class="relative bg-gray-800 rounded-lg  m-2 mb-10 border-gray-800 shadow-lg each">
-                    <svg class="m-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700 mx-auto" fill="none"
+                <div class="relative m-2 mb-10 bg-gray-800 border-gray-800 rounded-lg shadow-lg each">
+                    <svg class="m-auto mx-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z">
@@ -208,8 +208,8 @@ defineProps({
                     </div>
                 </div>
                 <!-- each -->
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg">
-                    <svg class="m-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700 mx-auto" fill="none"
+                <div class="relative m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg ">
+                    <svg class="m-auto mx-auto w-44 h-44 stroke-cyan-500 hover:stroke-cyan-700" fill="none"
                         stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z">
@@ -231,16 +231,16 @@ defineProps({
 
 
 
-            <h1 class="text-4xl text-gray-800 dark:text-yellow-300 text-center hover:underline mt-10">
+            <h1 class="mt-10 text-4xl text-center text-gray-800 dark:text-yellow-300 hover:underline">
                 Most desired disciplines
             </h1>
-            <p class=" text-gray-900 dark:text-gray-50 sm:mx-32 text-center mt-5">
+            <p class="mt-5 text-center text-gray-900 dark:text-gray-50 sm:mx-32">
                 The list is not comprehensive. We are always on the lookout for anyone who wish to use their interest in
                 freelance writing to generate stable income.
             </p>
 
             <div class="grid grid-cols-2 gap-1 text-gray-700 dark:text-gray-300">
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -250,7 +250,7 @@ defineProps({
                     Healthcare
                 </div>
 
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -259,7 +259,7 @@ defineProps({
                     </svg>
                     Pharmacology
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -268,7 +268,7 @@ defineProps({
                     </svg>
                     Physics
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -277,7 +277,7 @@ defineProps({
 
                     </svg> Chemistry
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -286,7 +286,7 @@ defineProps({
                     </svg>
                     Biology
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -295,8 +295,7 @@ defineProps({
                     </svg>
                     Anthropology
                 </div>
-                <div
-                    class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg  p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -305,7 +304,7 @@ defineProps({
                     </svg>
                     Environmental studies
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -314,7 +313,7 @@ defineProps({
                     </svg>
                     Genetics
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -323,7 +322,7 @@ defineProps({
                     </svg>
                     Programming
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -332,8 +331,7 @@ defineProps({
                     </svg>
                     Engineering
                 </div>
-                <div
-                    class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6  w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -342,7 +340,7 @@ defineProps({
                     </svg>
                     IT management
                 </div>
-                <div class=" bg-gray-800 rounded-lg mx-auto relative m-2 mb-10 border-gray-700 shadow-lg p-6 w-60 flex">
+                <div class="relative flex p-6 m-2 mx-auto mb-10 bg-gray-800 border-gray-700 rounded-lg shadow-lg w-60">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -352,16 +350,16 @@ defineProps({
                     Creative writing
                 </div>
             </div>
-            <h1 class="text-4xl text-gray-800 dark:text-yellow-300 text-center hover:underline mt-10">
+            <h1 class="mt-10 text-4xl text-center text-gray-800 dark:text-yellow-300 hover:underline">
                 Our prices
             </h1>
-            <p class=" text-center text-gray-800 dark:text-gray-50">
+            <p class="text-center text-gray-800 dark:text-gray-50">
                 We value your work, your time and expertise.Get what you deserve.
             </p>
             <ol class="relative border-l border-gray-200 dark:border-gray-700">
                 <li class="mb-10 ml-6">
                     <span
-                        class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                         <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -369,7 +367,7 @@ defineProps({
                                 clip-rule="evenodd"></path>
                         </svg>
                     </span>
-                    <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-yellow-500 mt-6">
+                    <h3 class="flex items-center mt-6 mb-1 text-lg font-semibold text-gray-900 dark:text-yellow-500">
                         Looking for a freelance job with stable income?
                         <span
                             class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">
@@ -384,7 +382,7 @@ defineProps({
                         Combine steady cash-flow with freedom. It’s easy, it’s fun and it’s real!
                     </p>
                     <a href="#"
-                        class="inline-flex items-center py-2 px-4 text-sm font-medium text-gray-900 bg-white rounded-lg border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
+                        class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-gray-100 border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-200 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">
                         <svg class="w-6 h-6 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -396,7 +394,7 @@ defineProps({
                 </li>
                 <li class="mb-10 ml-6">
                     <span
-                        class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-200 rounded-full ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
+                        class="absolute flex items-center justify-center w-6 h-6 bg-blue-200 rounded-full -left-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
                         <svg aria-hidden="true" class="w-3 h-3 text-blue-600 dark:text-blue-400" fill="currentColor"
                             viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd"
@@ -417,7 +415,7 @@ defineProps({
                         experienced and trained authors who enable us to satisfy our clients' expectations. All of our
                         authors are highly skilled and experienced, and they are our most significant asset.
                     </p>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400 pt-5">
+                    <p class="pt-5 text-base font-normal text-gray-500 dark:text-gray-400">
                         We are always on the lookout for qualified and motivated writers that are enthusiastic about
                         their work. QualityWriters.net encourages any interested authors to contact us for appropriate
                         assignments. You can select projects based on your interests and experience. Furthermore,
@@ -427,7 +425,7 @@ defineProps({
                         their abilities. We do not accept articles that include any type of mistake, nor do we accept
                         copied material that is not original.
                     </p>
-                    <p class="text-base font-normal text-gray-500 dark:text-gray-400 pt-5">
+                    <p class="pt-5 text-base font-normal text-gray-500 dark:text-gray-400">
                         We are a professional writing service, and all of our authors are paid on time. We also give the
                         essential assistance to our authors. If you are seeking for a writing firm that can help you
                         improve professionally, QualityWriters.net is the finest option for you. If you are confident in
@@ -437,7 +435,7 @@ defineProps({
                 </li>
             </ol>
             <Footerpage />
-            <!-- <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+            <!-- <div class="mt-8 overflow-hidden bg-white shadow dark:bg-gray-800 sm:rounded-lg">
 
                 <div class="grid grid-cols-1 md:grid-cols-2">
                     <div class="p-6">
@@ -447,14 +445,14 @@ defineProps({
                                 <path
                                     d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold">
+                            <div class="ml-4 text-lg font-semibold leading-7">
                                 <a href="https://laravel.com/docs"
-                                    class="underline text-gray-900 dark:text-white">Documentation</a>
+                                    class="text-gray-900 underline dark:text-white">Documentation</a>
                             </div>
                         </div>
 
                         <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
                                 Laravel has wonderful, thorough documentation covering every aspect of the
                                 framework.
                                 Whether you are new to the framework or have previous experience with Laravel, we
@@ -471,14 +469,14 @@ defineProps({
                                     d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
                                 <path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold">
+                            <div class="ml-4 text-lg font-semibold leading-7">
                                 <a href="https://laracasts.com"
-                                    class="underline text-gray-900 dark:text-white">Laracasts</a>
+                                    class="text-gray-900 underline dark:text-white">Laracasts</a>
                             </div>
                         </div>
 
                         <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
                                 Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript
                                 development. Check them out, see for yourself, and massively level up your
                                 development
@@ -494,14 +492,14 @@ defineProps({
                                 <path
                                     d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z" />
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold">
+                            <div class="ml-4 text-lg font-semibold leading-7">
                                 <a href="https://laravel-news.com/"
-                                    class="underline text-gray-900 dark:text-white">Laravel News</a>
+                                    class="text-gray-900 underline dark:text-white">Laravel News</a>
                             </div>
                         </div>
 
                         <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
                                 Laravel News is a community driven portal and newsletter aggregating all of the
                                 latest
                                 and most important news in the Laravel ecosystem, including new package releases and
@@ -517,13 +515,13 @@ defineProps({
                                 <path
                                     d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
-                            <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">
+                            <div class="ml-4 text-lg font-semibold leading-7 text-gray-900 dark:text-white">
                                 Vibrant Ecosystem
                             </div>
                         </div>
 
                         <div class="ml-12">
-                            <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
+                            <div class="mt-2 text-sm text-gray-600 dark:text-gray-400">
                                 Laravel's robust library of first-party tools and libraries, such as <a
                                     href="https://forge.laravel.com" class="underline">Forge</a>, <a
                                     href="https://vapor.laravel.com" class="underline">Vapor</a>, <a
@@ -545,10 +543,10 @@ defineProps({
         </div>
 
         <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-            <div class="text-center text-sm text-gray-500 sm:text-left">
+            <div class="text-sm text-center text-gray-500 sm:text-left">
                 <div class="flex items-center">
                     <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
-                        stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
+                        stroke="currentColor" class="w-5 h-5 -mt-px text-gray-400">
                         <path
                             d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
                     </svg>
@@ -558,7 +556,7 @@ defineProps({
                     </a>
 
                     <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                        stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
+                        stroke-width="2" viewBox="0 0 24 24" class="w-5 h-5 ml-4 -mt-px text-gray-400">
                         <path
                             d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
                     </svg>
@@ -569,7 +567,7 @@ defineProps({
                 </div>
             </div>
 
-            <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
+            <div class="ml-4 text-sm text-center text-gray-500 sm:text-right sm:ml-0">
                 Laravel v{{ laravelVersion }} (PHP v{{ phpVersion }})
             </div>
         </div> -->

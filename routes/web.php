@@ -22,7 +22,12 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return Inertia::render('Dashboard');
     })->name('dashboard');
+    //task
     Route::get('/tasks', function () {
         return Inertia::render('Tasks');
     })->name('tasks');
+    //task
+    Route::get('/favourite', function () {
+        return Inertia::render('favourite');
+    })->name('favourite');
 });
