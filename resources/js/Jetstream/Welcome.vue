@@ -1,16 +1,14 @@
 <script setup>
-import JetApplicationLogo from '@/Jetstream/ApplicationLogo.vue';
+// import JetApplicationLogo from '@/Jetstream/ApplicationLogo.vue';
 </script>
 
 <template>
     <div>
-        <div class="p-6 bg-gray-200 border-b border-gray-200 sm:px-20 dark:bg-gray-800">
-            <div>
-                <JetApplicationLogo class="block w-auto h-12" />
-            </div>
+        <div class="p-3 bg-gray-200 border-b border-gray-200 sm:px-10 dark:bg-gray-800">
+
 
             <div class="mt-8 text-2xl">
-                Welcome to your Jetstream application!
+                Your Completed Orders
             </div>
 
             <div class="mt-6 text-gray-500">

@@ -21,6 +21,7 @@
         "vue": "^3.2.31"
     },
     "dependencies": {
-        "flowbite": "^1.5.1"
+        "flowbite": "^1.5.1",
+        "vue-sidebar-menu": "^5.2.4"
     }
 }

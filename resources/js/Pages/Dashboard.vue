@@ -2,6 +2,7 @@
 import AppLayout from '@/Layouts/AppLayout.vue';
 import Welcome from '@/Jetstream/Welcome.vue';
 import Footerbt from '@/Jetstream/Footer.vue';
+// import Sidebar from '@/Jetstream/Sidebar.vue';
 </script>
 
 <template>
@@ -11,6 +12,7 @@ import Footerbt from '@/Jetstream/Footer.vue';
                 Dashboard
             </h2>
         </template>
+
 
         <div class="py-12">
             <div class="mx-auto max-w-7xl sm:px-6 lg:px-8">

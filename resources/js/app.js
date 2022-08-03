@@ -28,6 +28,26 @@ createInertiaApp({
 
 InertiaProgress.init({ color: "#4B5563" });
 
+// import { createApp, h } from "vue";
+// import link from "@inertiajs/inertia-vue3/src/link";
+
+// const customLink = {
+//     name: "CustomLink",
+//     props: ["item", "/dashboard"],
+//     render() {
+//         return h(link, this.$slots.default);
+//     },
+//     watch: {
+//         "$page.url"() {
+//             this.onRouteChange();
+//         },
+//     },
+//     inject: ["onRouteChange"],
+// };
+
+// const app = createApp(App);
+// app.component("custom-link", customLink);
+
 var themeToggleDarkIcon = document.getElementById("theme-toggle-dark-icon");
 var themeToggleLightIcon = document.getElementById("theme-toggle-light-icon");
 
